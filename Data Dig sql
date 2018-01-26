@@ -1,0 +1,62 @@
+/* Put your data in here and query it! */
+
+CREATE TABLE people_age_height (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT,
+    AGE INTEGER,
+    HEIGHTcm INTEGER);
+    
+    INSERT INTO people_age_height (name, AGE, HEIGHTcm)
+    
+    VALUES( "tom",10,100);
+    
+    INSERT INTO people_age_height (name, AGE, HEIGHTcm)
+    VALUES("BOB",22,180);
+    INSERT INTO people_age_height (name, AGE, HEIGHTcm)
+    VALUES ("LARRY",42,200);
+    INSERT INTO people_age_height (name, AGE, HEIGHTcm)
+    VALUES ("PINK EYE", 19,187);
+    INSERT INTO people_age_height (name, AGE, HEIGHTcm)
+    VALUES ("FERNBANK",44,168);
+    INSERT INTO people_age_height (name, AGE, HEIGHTcm)
+    VALUES ("SATAN",666,666);
+    INSERT INTO people_age_height (name, AGE, HEIGHTcm)
+    VALUES("ORANGE BOY", 15,147);
+    INSERT INTO people_age_height (name, AGE, HEIGHTcm)
+    VALUES("FROG",28,189);
+    INSERT INTO people_age_height (name, AGE, HEIGHTcm)
+    VALUES("SLIMEY NOUN",34,148);
+    INSERT INTO people_age_height (name, AGE, HEIGHTcm)
+    VALUES("THIS IS GETTING LONG",11,111);
+    INSERT INTO people_age_height (name, AGE, HEIGHTcm)
+    VALUES("THIS IS TEDIOUS",32,371);
+    INSERT INTO people_age_height (name, AGE, HEIGHTcm)
+    VALUES( "tom",10,100);
+    
+    INSERT INTO people_age_height (name, AGE, HEIGHTcm)
+    VALUES("BOB",22,180);
+    INSERT INTO people_age_height (name, AGE, HEIGHTcm)
+    VALUES ("LARRY",42,200);
+    INSERT INTO people_age_height (name, AGE, HEIGHTcm)
+    VALUES ("PINK EYE", 19,187);
+    INSERT INTO people_age_height (name, AGE, HEIGHTcm)
+    VALUES ("FERNBANK",44,168);
+    INSERT INTO people_age_height (name, AGE, HEIGHTcm)
+    VALUES ("SATAN",666,666);
+    INSERT INTO people_age_height (name, AGE, HEIGHTcm)
+    VALUES("ORANGE BOY", 15,147);
+    INSERT INTO people_age_height (name, AGE, HEIGHTcm)
+    VALUES("FROG",28,189);
+    INSERT INTO people_age_height (name, AGE, HEIGHTcm)
+    VALUES("SLIMEY NOUN",34,148);
+    INSERT INTO people_age_height (name, AGE, HEIGHTcm)
+    VALUES("THIS IS GETTING LONG",11,111);
+    INSERT INTO people_age_height (name, AGE, HEIGHTcm)
+    VALUES("THIS IS TEDIOUS",32,371);
+    
+SELECT name FROM people_age_height WHERE AGE>15 OR HEIGHTcm>153;
+
+SELECT name, sum(AGE) AS TOTAL_AGE FROM people_age_height
+    GROUP BY name
+    HAVING TOTAL_AGE > 55;
+    
