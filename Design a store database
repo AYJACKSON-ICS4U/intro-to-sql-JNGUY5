@@ -1,0 +1,12 @@
+CREATE TABLE Products (id INTEGER PRIMARY KEY, name TEXT, price INTEGER);
+INSERT INTO Products VALUES (1, "Skiss", 56);
+INSERT INTO Products VALUES(2, "AaAAAorange manr", 99);
+INSERT INTO Products VALUES(3, "HAVEs", 1000);
+INSERT INTO Products VALUES(4, "Ice cream", 300);
+INSERT INTO Products VALUES(5, "PONY RIDE", 48);
+INSERT INTO Products VALUES(6, "Turtles chocolare", 568);
+
+SELECT SUM(price) FROM Products;
+
+
+SELECT * FROM Products WHERE price < 301 ORDER BY price;
