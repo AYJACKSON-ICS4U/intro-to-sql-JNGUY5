@@ -1,0 +1,30 @@
+/* What does the app's SQL look like? */
+
+CREATE TABLE dogs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    type TEXT,
+    size TEXT);
+    
+INSERT INTO dogs (type, size)
+    VALUES ("black", "2m");
+INSERT INTO dogs (type, size)
+    VALUES ("husky", "155cm");
+INSERT INTO dogs (type, size)
+    VALUES ("mini dog", "68cm");
+    
+    ALTER TABLE dogs ADD price INTEGER;
+SELECT * FROM dogs;
+
+UPDATE dogs SET price = 10000 WHERE type = "black";
+UPDATE dogs SET price = 200000 WHERE type = "husky";
+UPDATE dogs SET price = 300000 WHERE type = "mini dog";
+SELECT * FROM dogs;
+
+INSERT INTO dogs (type, size, price) VALUES ("Lab", "130cm", 158295);
+INSERT INTO dogs (type, size, price) VALUES ("Golden retreiver", "140cm", 294629);
+INSERT INTO dogs (type, size, price) VALUES ("floating dog", "111cm", 294728);
+SELECT * FROM dogs;
+
+
+DELETE FROM dogs WHERE type = "floating dog";
+SELECT* FROM dogs;A
